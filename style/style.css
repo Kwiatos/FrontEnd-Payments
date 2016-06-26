@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+}
+
+#container {
+  width: 980px;
+  margin: 25px auto 0 auto;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 1px 0px 5px rgba(208, 207, 207, 0.75);
+  -moz-box-shadow:    0px 1px 0px 5px rgba(208, 207, 207, 0.75);
+  box-shadow:         0px 1px 0px 5px rgba(208, 207, 207, 0.75);
+}
+
+#container.shadow {
+  background-color: #dedddd;
+}
+#container .container-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  outline: 0
+}
+
+#container div.container-header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#container div.container-header h1 {
+  font-family: Source Sans Pro-Light;
+  font-size: 46px;
+  color: #2288b7;
+}
+
+#container div.container-header p {
+  font-family: Source Sans Pro-Regular;
+  font-size: 16px;
+  color: #555555;
+}
+
+#container div.container-header hr {
+  width: 95%;
+  color: #e0e0e0;
+  border-width: 2px;
+}
+#container ul.pagination > li > a {
+  margin: 0px 2px 0 2px;
+  border-radius: 3px;
+  color: #717171;
+  font-family: Source Sans Pro-Semibold;
+}
+
+#container ul.pagination > li > a.ng-binding{
+  width: 29px;
+  text-align: center;
+}
+
+#container ul.pagination > .active> a {
+  background-color: #686868;
+  border-color: #505050;
+  color: #fff;
+}
+
+#container div.container-footer {
+  display: flex;
+}
+
+#container div.container-footer ul {
+  margin: 15px auto 15px auto;
+}
+
+#container .container-body .reset-button, #container .container-body .search-button {
+  padding: 4px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+#container .container-body .search-button {
+  background-color: #3f88f1;
+  color: #fff;
+}
+
+#container .container-body .reset-button {
+  background: #dadada;
+  background: -webkit-linear-gradient(bottom, #f0f0f0, #cacaca);
+  background: -o-linear-gradient(bottom, #f0f0f0, #cacaca);
+  background: -moz-linear-gradient(bottom, #f0f0f0, #cacaca);
+  background: linear-gradient(to bottom, #f0f0f0 , #cacaca);
+}
+
+#container .container-body table {
+  width: 95%;
+  margin: 0 auto 0 auto;
+  border: 1px solid #d2d5d7;
+  border-radius: 5px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#container .container-body table thead {
+  background-color: #eaeced;
+}
+
+#container .container-body .table > thead  {
+  border: 1px solid #ddd;
+  height: 60px;
+  font-family: Source Sans Pro-Semibold;
+}
+
+#container .container-body .table > tbody {
+  border: 1px solid #ddd;
+  font-family: Source Sans Pro-Light;
+  font-weight: bold;
+}
+
+#container .container-body .table > thead tr {
+  height: 60px;
+}
+
+#container .container-body .table > thead tr th {
+  vertical-align: middle;
+}
+
+#container .container-body .table > thead tr th:first-child {
+  width: 550px;
+}
+
+#container .container-body .table > thead tr th:first-child span, #container .container-body .table > tbody tr td:first-child span {
+  margin-left: 30px;
+}
+
+#container .container-body .table > tbody tr td {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#container .container-body .table > tbody tr td:first-child, #container .container-body .table > tbody tr td:nth-child(2), #container .container-body .table > tbody tr td:nth-child(3){
+  border-right: 1px solid #e0e0e0;
+}
+
+#container .container-body .table > thead tr th:nth-child(2) {
+  width: 190px;
+  text-align: center;
+}
+
+#container .container-body .table thead   {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 512px) {
+	#container .container-body .rwd-table {
+    overflow-x:scroll;
+  }
+}
+
+#container .container-body .table > thead tr th:nth-child(3), #container .container-body .table > thead tr th:last-child  {
+  width: 93px;
+  text-align: center;
+}
+
+#container .container-body .table > tbody tr td:nth-child(3),
+#container .container-body .table > tbody tr td:last-child {
+  text-align: center;
+}
+
+#container .container-body .table > tbody tr td:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.modal-footer .button-cancel {
+  padding: 4px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #bbbbbb;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal-header.supplier-header {
+  font-family: Source Sans Pro-Semibold;
+  text-align: center;
+}
+
+.modal-body {
+  font-family: Source Sans Pro-Light;
+}
+
+.rate-icon {
+  background-color: #fff;
+  font-family: Source Sans Pro-BlackIt;
+}
+
+.rate-icon.filled {
+  background-color: #62bfea;
+}
+
+.rate-icon.filled, .rate-icon  {
+  width: 26px;
+  height: 26px;
+  margin: 2px;
+  border-radius: 50px;
+  border: 1px solid #858585;
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.rate-icon.filled .rate-text {
+  color: #fff;
+}
+
+pound-rating ul {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#container div.suppliers-filters {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Source Sans Pro-Semibold;
+}
+
+#container div.suppliers-filters.input-search {
+  font-family: Source Sans Pro-ExtraLight;
+}
+
+@media screen and (max-width: 512px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  #container .form-inline .form-control.input-search {
+    width: 350px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 400px){
+  #container .form-inline .form-control {
+    width: 300px;
+    margin:0 auto 5px auto;
+    }
+}
+
+@media (max-width: 400px){
+  #container .form-inline .form-control {
+    width: 200px;
+    margin:0 auto 5px auto;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 400px){
+  .modal-dialog {
+    width: 400px;
+    margin:30px auto auto auto;
+    }
+}
+
+@media (max-width: 450px){
+  #container div.container-header {
+    max-width: 340px;
+    margin: auto;
+    }
+}
